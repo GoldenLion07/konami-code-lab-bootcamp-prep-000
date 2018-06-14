@@ -5,8 +5,8 @@ const codes = [
   40,
   37,
   39,
-  "ArrowLeft",
-  "ArrowRight",
+  37,
+  39,
   "b",
   "a"
 ];
