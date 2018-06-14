@@ -30,6 +30,7 @@ function onKeyDownHandler(e) {
 }
 
 function init() {
+  
   var body = document.body;
 +  body.addEventListener('keydown', function(e){
 +    var key = parseInt(e.detail || e.which);
