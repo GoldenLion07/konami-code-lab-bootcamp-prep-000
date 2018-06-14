@@ -1,9 +1,9 @@
 const codes = [
   38,
   38,
-  ,
-  "ArrowDown",
-  "ArrowLeft",
+  40,
+  40,
+  39,
   "ArrowRight",
   "ArrowLeft",
   "ArrowRight",
