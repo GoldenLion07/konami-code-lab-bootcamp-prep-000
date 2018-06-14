@@ -43,7 +43,7 @@ function init() {
       index = 0;
     }
   } else {
-    index = true;
+    index = 0;
   }
 })
 }
