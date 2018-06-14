@@ -31,19 +31,35 @@ function onKeyDownHandler(e) {
 
 function init() {
   // your code here
- var index = 0;
-  document.addEventListener('keydown', function (e) {
-    const key = parseInt(e.detail || e.which);
+ var body = document.body;
+  body.addEventListener('keydown', function(e){
+    var key = parseInt(e.detail || e.which);
+
+    // check if key is equal to current value of index in code array
+    // then loop through the array if conditions match
 
     if (key === code[index]) {
+      // if yes, increment index by 1
       index++;
 
+      // if still in the loop, check if index is equal to code array length
       if (index === code.length - 1) {
-        window.alert("YOU DID IT!");
+        // reset the index counter
         index = 0;
+        // if yes, you passed, congrats!
+        alert("Congrats!");
       }
-    } else {
-      index = 0;
-    }
-  }, false);
+
+
+
+  // if key doesn't match current index in code array, then reset the index to zero
+  } else {
+    index = 0;
+  }
+
+
+  });
+
 }
+
+//init();
