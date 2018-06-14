@@ -33,7 +33,7 @@ function init() {
  // your code here
   var body = document.body;
   body.addEventListener('keydown', function(e){
-    var key = parseInt(e.detail || e.which);
+    var key = parseInt(e.key || e.key);
     if (key === codes[index]) {
     index++;
  
