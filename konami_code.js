@@ -1,49 +1,38 @@
-const codes = [
-    "ArrowUp",
-    "ArrowUp",
-    "ArrowDown",
-    "ArrowDown",
-    "ArrowLeft",
-    "ArrowRight",
-    "ArrowLeft",
-    "ArrowRight",
-    "b",
-    "a"
-  ];
+var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
-let index = 0;
-
-function onKeyDownHandler(e) {
-  const key = e.key;
- 
-  if (key === alphabet[index]) {
-    index++;
- 
-    if (index === alphabet.length) {
-      alert("Hurray!");
- 
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
-}
+// keep track of index outside of the event handler
+var index = 0;
+//console.log(index);
 
 function init() {
   // your code here
- var body = document.body;
+  var body = document.body;
   body.addEventListener('keydown', function(e){
     var key = parseInt(e.detail || e.which);
-if (key === code[index]) {
+
+    // check if key is equal to current value of index in code array
+    // then loop through the array if conditions match
+
+    if (key === code[index]) {
+      // if yes, increment index by 1
       index++;
-if (index === code.length - 1) {
+
+      // if still in the loop, check if index is equal to code array length
+      if (index === code.length - 1) {
+        // reset the index counter
         index = 0;
+        // if yes, you passed, congrats!
         alert("Congrats!");
       }
-} else {
+
+
+
+  // if key doesn't match current index in code array, then reset the index to zero
+  } else {
     index = 0;
   }
-});
-}
 
-init();
+
+  });
+
+}
