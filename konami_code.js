@@ -54,7 +54,7 @@ function init() {
 
   // if key doesn't match current index in code array, then reset the index to zero
   } else {
-    index = 0;
+    index = 1;
   }
 
 
