@@ -35,3 +35,4 @@ function init() {
   body.addEventListener('keydown', function(e){
     var key = parseInt(e.detail || e.which);
   }
+}
