@@ -1,4 +1,4 @@
-const code = [
+const codes = [
     "ArrowUp",
     "ArrowUp",
     "ArrowDown",
@@ -38,12 +38,12 @@ function init() {
     // check if key is equal to current value of index in code array
     // then loop through the array if conditions match
 
-    if (key === code[index]) {
+    if (key === codes[index]) {
       // if yes, increment index by 1
       index++;
 
       // if still in the loop, check if index is equal to code array length
-      if (index === code.length - 1) {
+      if (index === codes.length - 1) {
         // reset the index counter
         index = 0;
         // if yes, you passed, congrats!
